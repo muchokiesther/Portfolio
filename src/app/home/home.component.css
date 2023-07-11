@@ -1,0 +1,55 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20rem;
+  justify-content: center;
+  animation: fadeIn 1s ease-in-out, slideIn 1s ease-in-out;
+
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+
+/* Define the animation for bouncing each letter */
+@keyframes bounceIn {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Apply the animation to each letter in the h2 element */
+h2 span {
+  display: inline-block;
+  animation: bounceIn 0.5s  ease-in-out alternate;
+  animation-delay: calc(0.1s * var(--index));
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
