@@ -4,7 +4,8 @@
   gap: 20rem;
   justify-content: center;
   animation: fadeIn 1s ease-in-out, slideIn 1s ease-in-out;
-
+/* background-color: #FCCB38; */
+height:70vh;
 }
 
 h1 {
@@ -53,3 +54,4 @@ h2 span {
     transform: translateX(0);
   }
 }
+
