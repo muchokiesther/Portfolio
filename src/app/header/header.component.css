@@ -37,4 +37,5 @@ font-size: 1.3rem;
 
 .header ul li:hover {
     transform: scale(1.35);
+    color: #256a28;
 }
