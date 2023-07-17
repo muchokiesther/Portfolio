@@ -16,7 +16,7 @@ min-height:100vh;
   flex-direction: column;
   gap: 0.5rem;
   justify-content: center;
-  animation: fadeIn 1s ease-in-out, slideIn 1s ease-in-out;
+  animation: fadeIn 3s ease-in-out, slideIn 1s ease-in-out;
   align-items: center;
 
 }
@@ -37,11 +37,14 @@ h2 {
 }
 
 .fade-in {
-  opacity: 0;
+
   animation: fade-in 5s forwards;
   margin-top: 2rem;
   font-size: 2rem;
   color:  #3B3C36;
+  position: relative; /* Add position relative */
+  z-index: 1;
+ 
 }
 
 @keyframes fade-in {
@@ -49,9 +52,11 @@ h2 {
     opacity: 0;
   }
   100% {
-    opacity: 2;
+    opacity: 1;
   }
 }
+
+
 
 /* Define the animation for bouncing each letter */
 @keyframes bounceIn {
